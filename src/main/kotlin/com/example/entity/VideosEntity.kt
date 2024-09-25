@@ -1,7 +1,7 @@
 import jakarta.persistence.*
 
 @Entity
-@Table(name = "videos")
+@Table(name = "contenu")
 data class VideosEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

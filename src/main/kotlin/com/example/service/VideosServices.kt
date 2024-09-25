@@ -5,6 +5,6 @@ import com.example.repository.VideosEntityRepository
 
 class VideosServices(private val videosEntityRepository: VideosEntityRepository) {
 
-    fun findAllRecipes(): MutableList<VideosEntity> = videosEntityRepository.findAll()
+    fun readAllVideos(): MutableList<VideosEntity> = videosEntityRepository.findAll()
 
 }
