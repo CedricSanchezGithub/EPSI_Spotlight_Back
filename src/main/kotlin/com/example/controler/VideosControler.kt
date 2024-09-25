@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController
 import org.slf4j.LoggerFactory
 
 @RestController
-@RequestMapping("/api/videos")
+@RequestMapping("/api")
 class VideosController(private val videosServices: VideosServices) {
     private val logger = LoggerFactory.getLogger(VideosController::class.java)
 
-    @GetMapping
+    @GetMapping("/videos")
     fun getAllVideos(): ResponseEntity<List<VideosEntity>> {
         logger.info("Fetching all videos")
         return try {
